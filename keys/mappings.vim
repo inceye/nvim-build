@@ -40,11 +40,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-"nnoremap <Leader>o o<Esc>^Da
-"nnoremap <Leader>O O<Esc>^Da
-
 " Spell-check set to <leader>o, 'o' for 'orthography':
 	map <leader>o :setlocal spell! spelllang=en_us<CR>
+	map <leader>O :setlocal spell! spelllang=ru_RU<CR>
 
 " Check file in shellcheck:
 	map <leader>s :!clear && shellcheck %<CR>
@@ -55,3 +53,10 @@ nnoremap <C-l> <C-w>l
 
 " Replace all is aliased to S.
 	nnoremap S :%s//g<Left><Left>
+
+" Using NERDTree
+	map <F3> :NERDTreeToggle<CR>
+
+" <++> mapping
+	inoremap ~<Space> <Esc>/<++><Enter>"_c4l
+
